@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col" style="text-align:center;margin-top:18px">
+            <img src="assets/photos/{{product.productImage}}" alt="jeans" class="img"
+                style="border-radius: 15px; box-shadow: 0.5px 0.5px 15px rgb(91, 75, 75)">
+        </div>
+        <div class="media678"></div>
+        <div class="col" id="rdiv">
+            <div class="productName">{{product.productName}}</div>
+            <div class="productBrand"><span>Brand: </span>{{product.productBrand}}</div>
+            <div class="productPrice"><span>Price: </span>{{product.productPrice}}Rs</div>
+            <span class="dheading">Description :</span>
+            <div class="productDetail" style="padding-left:10px">{{product.productDetail}}</div>
+            <div class="avail">Check Product Availability :</div>
+            <div class="input-group" style="padding-left:10px">
+
+                <div class="form-outline" style="margin-right: 5px">
+                    <input type="number" id="form1" class="form-control" placeholder="Pin Code"
+                        Style="border-radius:15px" #pinCode />
+                </div>
+                <button type="button" class="btn btn-primary" id="search-btn"
+                    style="width: 100px; height: 100%; border-radius: 8px" (click)="check(pinCode.value)">
+                    Check
+                </button>
+            </div>
+        </div>
+    </div>

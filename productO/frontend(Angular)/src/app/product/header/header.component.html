@@ -1,0 +1,16 @@
+<div class="page-header">
+    <div class="logo">
+        <a routerLink="/home" class="link">
+            <span style="color: red">P</span><span style="color: rgb(243, 206, 87)"><i>ro</i></span><span
+                style="color: rgb(244, 49, 49)">D</span><span style="color: rgb(252, 193, 115)"><i>uct</i></span><span
+                style="color: red">O</span></a>
+    </div>
+
+    <div class="user-name" *ngIf="show">
+        welcome
+        <span class="username">{{ userName }}</span>
+        <button type="button" (click)="logout()" class="btn btn-outline-danger" id="btn">
+            Logout
+        </button>
+    </div>
+</div>

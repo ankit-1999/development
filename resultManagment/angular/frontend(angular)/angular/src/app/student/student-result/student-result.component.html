@@ -1,0 +1,30 @@
+<app-header></app-header>
+<p class="back-tag"><a routerLink="/student">Back</a></p>
+<div class="result-display">
+  <p class="result-heading">Result</p>
+  <br />
+  <div class="inside-div">
+    <div class="label">
+      <p style="float: right">Roll No :</p>
+    </div>
+    <div class="display-field">{{student[0].rollNo}}</div>
+  </div>
+  <div class="inside-div">
+    <div class="label">
+      <p style="float: right">Name :</p>
+    </div>
+    <div class="display-field">{{student[0].name}}</div>
+  </div>
+  <div class="inside-div">
+    <div class="label">
+      <p style="float: right">Date of Birth :</p>
+    </div>
+    <div class="display-field">{{student[0].dateOfBirth}}</div>
+  </div>
+  <div class="inside-div">
+    <div class="label">
+      <p style="float: right">Score :</p>
+    </div>
+    <div class="display-field">{{student[0].score}}</div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="add-record">Total Students {{students.length}} <button (click)="navigateToAddStudent()" class="add-button">Add Record</button>
+</div>
+<table class="table">
+    <tr class="table-header">
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Score</th>
+        <th class="actionBtn">Actions</th>
+    </tr>
+
+    <tr *ngFor="let student of students"class="table-header">
+        <td>{{student.rollNo}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.dateOfBirth}}</td>
+        <td>{{student.score}}</td>
+        <td>
+            <button class="button" (click)="editStudent(student.rollNo)">Edit</button>
+            <button class="button" (click)="deleteStudent(student.rollNo)"  style="margin-left:15px;background-color:rgb(248, 55, 48)">Delete</button>
+        </td>
+    </tr>
+</table>

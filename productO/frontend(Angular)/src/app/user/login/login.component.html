@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="container">
+  <form #userDetails="ngForm" (ngSubmit)="getData(userDetails.value)">
+
+    <div class="form-heading"><span class="bold">Login! </span> with your email and password:</div>
+    <div class="col-sm-10" style="margin-top: 50px;">
+      <input type="email" id="email" name="email" ngModel class="form-control form-control-lg"
+        style="border-radius:15px;background-color:rgba(247, 244, 244, 0.801)" placeholder="Email " required>
+    </div>
+    <div class="col-sm-10" style="margin-top: 25px;">
+      <input type="password" id="password" name="password" ngModel class="form-control form-control-lg"
+        style="border-radius:15px;background-color:rgba(247, 244, 244, 0.801)" placeholder="Password" required>
+    </div>
+
+    <div class="submit-btn">
+      <button type="submit" id="submit" class="btn btn-dark"
+        style="width:30%;border-radius:15px;height:45px;">Login</button>
+    </div>
+  </form>
+  <div>
+    <span class="form-footer">Don't have an account? <a routerLink="/user/register">Sign Up</a></span>
+  </div>
+</div>

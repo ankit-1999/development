@@ -1,0 +1,43 @@
+
+.result {
+    margin-top: 80px;
+    margin-left: 250px;
+  }
+  
+  .inside-div {
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 23px;
+  }
+  
+  .input {
+    width: 350px;
+    height: 33px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding-left: 8px;
+  }
+  
+  #name {
+    margin-left: 10px;
+  }
+  
+  #search {
+    margin-left: 80px;
+    width: 140px;
+    height: 36px;
+    border-radius: 14px;
+    background-color: rgb(19, 165, 250);
+    color: white;
+    font-weight: bold;
+  }
+  
+  #clear-button {
+    margin-left: 40px;
+    width: 140px;
+    height: 36px;
+    border-radius: 14px;
+    background-color: white;
+    font-weight: bold;
+  }
+  

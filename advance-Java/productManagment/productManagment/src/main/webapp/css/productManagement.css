@@ -1,0 +1,106 @@
+.header{
+    height:50px;
+    justify-content: center;
+}
+
+.heading {
+    margin-left: 30%;
+    font-size:35px;
+    font-weight:bold;
+}
+
+.header-form{
+    float: right;
+    height:80%;
+    margin-top:5px;
+    margin-right: 20px;
+}
+
+.header-logout-button{
+    height:70%;
+    margin-top:5px;
+    width:75px;
+}
+
+.username{
+    font-size:20px;
+    margin-right: 5px;
+    font-style:normal;
+}
+
+.form-intro{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.input-container{
+    margin-left: 40px;
+    margin-top: 65px;
+    margin-right: 40px;
+}
+
+.div{
+    display: flex;
+    margin-top: 10px;
+}
+
+.control-label{
+    width:8%;
+    font-size: 20px;
+  
+}
+
+#add{
+   width: 60px;
+   height:25px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.table{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+td, th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table-header{
+    height:40px;
+}
+
+.th1{
+    width: 6%;
+}
+
+.th2{
+    width: 23%;
+}
+
+.th3{
+    width: 15%;
+}
+
+.th4{
+    width: 13%;
+}
+
+.th5{
+    width: 18%;
+}
+
+
+
+
+
+
+
+
+

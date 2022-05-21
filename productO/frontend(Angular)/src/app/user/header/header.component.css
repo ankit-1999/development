@@ -1,0 +1,19 @@
+.page-header {
+  font-weight: bold;
+  margin-top: 8px;
+  border: 1.5px solid #eee;
+  display: flex;
+  padding-left: 25px;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.logo {
+  left: 0;
+  margin-left: 20px;
+  font-size: 43px;
+}
+.link {
+  text-decoration: none;
+}

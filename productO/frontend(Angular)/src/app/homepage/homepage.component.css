@@ -1,0 +1,211 @@
+.page-header {
+  font-weight: bold;
+  margin-top: 8px;
+  border: 1.5px solid #eee;
+  display: flex;
+  padding-left: 25px;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.ocontainer {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  margin-left: 30px;
+  font-size: 43px;
+}
+.search-bar {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  height: 45px;
+  margin-top: 12px;
+}
+
+.user-button {
+  margin-left: 35%;
+}
+
+.form-control {
+  border-radius: 8px;
+}
+
+.break1 {
+  display: none;
+}
+
+.middle-heading {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.detail-btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 950px) {
+  .user-button {
+    margin-left: 25%;
+  }
+  .search-bar {
+    margin-right: 20px;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 812px) {
+  .user-button {
+    margin-left: 3%;
+  }
+  .logo {
+    position: relative;
+  }
+  .search-bar {
+    position: relative;
+    margin-left: 5px;
+  }
+  #search-btn {
+    margin-top: 12px;
+    margin-left: 15%;
+  }
+  #register-button {
+    margin-left: 0%;
+  }
+}
+
+/* card styles  */
+
+.main {
+  margin: 2%;
+  font-family: arial, sans-serif;
+}
+
+.card {
+  width: 20%;
+  display: inline-block;
+  box-shadow: 0.5px 0.5px 10px black;
+  border-radius: 5px;
+  margin: 2%;
+  transition: 1s;
+}
+
+.image img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.brand {
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.des {
+  padding: 3px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  box-shadow: 2px 2px 20px black;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+}
+
+/* slide */
+
+
+.slider-container {
+  margin-top: 8px;
+  margin-left: 6%;
+  width: 900px;
+  height: 300px;
+  box-shadow: 0.5px 0.5px 10px rgb(193, 164, 164);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.image-container {
+  width: 4500px; /* since one image will take width of 500px .So 5 image will take width of 5*500=2500px;*/
+  height: 300px; /* height should be same in order to show image inside container */
+  position: relative;
+  transition: left 2s;
+  animation-name: anki;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+}
+.slider-image {
+  width: 900px;
+  height: 396px;
+  float: left;
+}
+@keyframes anki {
+  0% {
+    left: 0px;
+  }
+  18% {
+    left: 0px;
+  }
+  20% {
+    left: -900px;
+  }
+  38% {
+    left: -900px;
+  }
+  40% {
+    left: -1800px;
+  }
+  58% {
+    left: -1800px;
+  }
+  60% {
+    left: -2700px;
+  }
+  78% {
+    left: -2700px;
+  }
+  80% {
+    left: -3600px;
+  }
+
+  100% {
+    left: -3600px;
+  }
+}

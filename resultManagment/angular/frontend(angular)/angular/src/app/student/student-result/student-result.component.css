@@ -1,0 +1,36 @@
+.back-tag {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.result-heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.result-display {
+  width: 45%;
+  margin-left: 28%;
+  margin-top: 50px;
+  height: 400px;
+}
+
+.label {
+  width: 50%;
+  font-size: 24px;
+}
+
+.inside-div {
+  height: 33px;
+  font-size: 24px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.display-field {
+  margin-left: 30px;
+  margin-top: 2px;
+  color: rgb(156, 147, 147);
+}

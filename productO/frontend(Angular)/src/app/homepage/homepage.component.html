@@ -1,0 +1,72 @@
+<div class="page-header">
+    <div class="logo">
+        <span style="color: red">P</span><span style="color: rgb(243, 206, 87)"><i>ro</i></span><span
+            style="color: rgb(244, 49, 49)">D</span><span style="color: rgb(252, 193, 115)"><i>uct</i></span><span
+            style="color: red">O</span>
+    </div>
+    <div  class="user-button">
+        <a routerLink="/user/login">
+            <button type="button" class="btn btn-primary btn-lg" id="login-button" style="width: 100px">
+                Login
+            </button></a>
+        <a routerLink="/user/register">
+            <button type="button" class="btn btn-primary btn-lg" id="register-button" style="margin-left: 10px">
+                Register
+            </button></a>
+    </div>
+
+    <div class="search-bar">
+
+        <div class="input-group">
+            
+            <div class="form-outline" style="margin-right: 5px">
+                <input type="search" id="form1" class="form-control" #box placeholder="search product" />
+            </div>
+            <button type="button" class="btn btn-primary" id="search-btn"
+                style="width: 100px; height: 100%; border-radius: 8px" (click)="getValue(box.value)">
+                Search
+            </button>
+            
+            <button *ngIf="login" type="button" class="btn btn-danger" 
+                style="width: 80px; height: 80%; border-radius: 8px;margin-left: 120px;" (click)="logOut()">
+                Logout
+            </button>
+        </div>
+    </div>
+</div>
+<div class="ocontainer" >
+    <div class="slider-container">
+        <div class="image-container">
+            <img src="assets\photos\laptops-featured-img.png" alt="" class="slider-image" />
+            <img src="assets\photos\beauty-ecommerce-products.jpg" alt="" class="slider-image" />
+            <img src="assets\photos\CL-Banner.jpg" alt="" class="slider-image" />
+            <img src="assets\photos\istockphoto-1152527286-612x612.jpg" alt="" class="slider-image" />
+            <img src="assets\photos\maxresdefault.jpg" alt="" class="slider-image" />
+        </div>
+    </div>
+</div>
+
+<div class="middle-heading">
+    <h2>Our Products</h2>
+</div>
+
+<div class="main">
+    <div class="card" *ngFor="let product of products">
+        <div class="image">
+            <img src="assets\photos\{{ product.productImage }}" height="200px" />
+        </div>
+        <div class="title">
+            <span>{{ product.productBrand }}</span>
+        </div>
+        <div class="brand">
+            <span>{{ product.productName }}</span>
+        </div>
+        <div class="detail-btn">
+            <a routerLink="/product/productDetail/{{ product.productId }}">
+                <button type="button" class="btn btn-info" style="margin-left: 35%; margin-bottom: 10px">
+                    Details
+                </button>
+            </a>
+        </div>
+    </div>
+</div>

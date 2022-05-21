@@ -1,0 +1,75 @@
+<app-header></app-header>
+<div class="middle-heading">
+    <div class="producth">Products</div>
+    <div class="media1"></div>
+    <div class="filter">
+        <span class="filterf">Filter by:</span>
+        <span style="display: inline-block; margin-left: 10px">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                (change)="filterByBrand($event)">
+                <option selected>Brand</option>
+                <option value="--none--">--none--</option>
+                <option *ngFor="let b of brand" [value]="b">
+                    {{ b }}
+                </option>
+            </select>
+        </span>
+        <span style="color: rgb(232, 226, 226); margin-left: 5px; margin-right: 5px">
+            |
+        </span>
+        <span *ngIf="displayFilter" class="price">
+            <input type="number" class="pBox" placeholder="min Price" #minPrice />
+            <span style="color: rgb(66, 63, 63)"> / </span>
+            <input type="number" class="pBox" placeholder="max Price" #maxPrice />
+            <button type="button" class="btn btn-outline-primary" (click)="getValue(minPrice.value, maxPrice.value)"
+                id="btnp">
+                Search
+            </button>
+        </span>
+    </div>
+</div>
+<div>
+    <h1 *ngIf="noProduct" style="text-align: center; font-size: 30px; margin-top: 8%">
+        <span style="font-size: 45px">Sorry</span> no product available!
+    </h1>
+
+    <div class="main">
+        <div *ngIf="logedIn; else elseBlock">
+            <div class="card" *ngFor="let product of products">
+                <div class="image">
+                    <img src="assets\photos\{{ product.productImage }}" height="150px" />
+                </div>
+                <div class="title">
+                    <span> {{ product.productBrand }}</span>
+                </div>
+                <div class="brand">
+                    <span>{{ product.productName }}</span>
+                </div>
+            </div>
+        </div>
+
+        <ng-template #elseBlock>
+            <div class="card" *ngFor="let product of products">
+                <div class="image">
+                    <img src="assets\photos\{{ product.productImage }}" height="140px" />
+                </div>
+                <div class="title">
+                    <span>{{ product.productBrand }}</span>
+                </div>
+                <div class="brand">
+                    <span>{{ product.productName }}</span>
+                </div>
+                <div class="brand">
+                    <span>Price : {{ product.productPrice }}</span>
+                </div>
+                <div class="detail-btn">
+                    <a routerLink="/product/productDetail/{{ product.productId }}">
+                        <button type="button" class="btn btn-info" style="margin-left: 30%; margin-bottom: 10px">
+                            View Details
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>

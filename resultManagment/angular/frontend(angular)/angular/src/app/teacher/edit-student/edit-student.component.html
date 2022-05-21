@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<form #editStudentForm="ngForm" (ngSubmit)="getData(editStudentForm.value)" class="result-display">
+  <p class="result-heading">Add New Result</p>
+  <br />
+  <div class="inside-div">
+    <div class="control-label">
+      <label class="label" for="rollNo">Roll No</label>
+    </div>
+    <div class="display-field">
+      <input  class="input" ngModel="{{student[0].rollNo}}" type="text"  id="rollNo" name="rollNo"  readonly />
+    </div>
+  </div>
+  <div class="inside-div">
+    <div class="control-label">
+      <label class="label" for="name">Name</label>
+    </div>
+    <div class="display-field">
+      <input  class="input" ngModel="{{student[0].name}}" type="text" id="name" name="name"  required />
+    </div>
+  </div>
+  <div class="inside-div">
+    <div class="control-label">
+      <label class="label" for="dateOfBirth">Date of Birth</label>
+    </div>
+    <div class="display-field">
+      <input  class="input" type="date" ngModel="{{student[0].dateOfBirth}}" id="dateOfBirth" name="dateOfBirth" required />
+    </div>
+  </div>
+  <div class="inside-div">
+    <div class="control-label">
+      <label class="label" for="score">Score</label>
+    </div>
+    <div class="display-field">
+      <input  class="input" type="text" ngModel="{{student[0].score}}" id="score" name="score"  required />
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="inside-div">
+    <button id="search">Add</button>
+  </div>
+</form>

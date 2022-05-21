@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="result">
+    <p style="font-size: 28px;">Find Result</p>
+    <br>
+    <br>
+    <form #studentDetails="ngForm" (ngSubmit)="getData(studentDetails.value)" >
+        <div class="inside-div">
+            <label for="rollNo">Roll No.</label>
+            <input type="text" ngModel id="rollNo" class="input" name="rollNo" required>
+        </div>
+        <br>
+        <div class="inside-div">
+            <label for="name" style="margin-left:20px;">Name</label>
+            <input type="text" ngModel id="name" class="input" name="name" required>
+        </div>
+        <br>
+        <div class="inside-div">
+            <button id="search">Search</button>
+        </div>
+    </form>
+
+
+</div>
